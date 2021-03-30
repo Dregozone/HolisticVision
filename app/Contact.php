@@ -5,9 +5,34 @@
     $type = ''; // Select
     $message = ''; // textarea
 
+    function checkform() { // Mock function for demo
+
+        return true;
+    }
+
+    function sendEmail() { // Mock function for demo
+
+        // Sending email
+
+        return true;
+    }
+
     // Process form
     if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
         // Form has been submit
+
+        $hours = 72;
+
+        if ( checkForm() && sendEmail() ) { // Check the form values are valid and check that the email has been sent successfully
+            echo "Form has been submit! Please allow {$hours} hours for somebody to get back to you. Thank you.";
+        } else { // Otherwise display an error message and re-populate the form to allow the user to try again
+            echo "Form failed to send, please try again!";
+
+            $name = $_POST["name"] ?? '';
+            $email = $_POST["email"] ?? '';
+            $type = $_POST["type"] ?? '';
+            $message = $_POST["message"] ?? '';
+        }
     }
 
     echo '

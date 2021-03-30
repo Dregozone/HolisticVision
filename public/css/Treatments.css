@@ -1,0 +1,16 @@
+
+h1 {
+    text-align: center;
+}
+
+div.treatment {
+    display: flex;
+    width: 60%;
+    margin: 1% 20%;
+}
+    img.treatment {
+        width: 120px;
+    }
+    p.treatment {
+        padding-left: 1%;
+    }

@@ -1,0 +1,11 @@
+
+section.treatment {
+    display: flex;
+    width: 60%;
+    margin: 1% 20%;
+}
+
+.right {
+    padding-left: 2%;
+    padding-top: 1%;
+}
